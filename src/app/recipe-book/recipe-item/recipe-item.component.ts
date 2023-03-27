@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent {
+  name: string;
+  description: string;
+  imagePath: string;
 
 }

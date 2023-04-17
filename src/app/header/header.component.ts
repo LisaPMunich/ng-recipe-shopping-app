@@ -8,6 +8,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 export class HeaderComponent {
   collapsed = true;
   @Output() navItem = new EventEmitter<string>();
+  shoppingBasket = '../../assets/chef.png';
 
   onSelect(navItem: string){
     this.navItem.emit(navItem);

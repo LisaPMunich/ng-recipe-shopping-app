@@ -3,11 +3,20 @@
   class="list-group-item clearfix"
   (click)="onSelected()"
 >
-  <div class="pull-left">
-    <h4 class="list-group-item-heading">{{recipe.name}}</h4>
-    <p class="list-group-item-text">{{recipe.description}}</p>
+
+  <div class="d-flex justify-content-between">
+    <div class="pull-left">
+      <h4 class="list-group-item-heading mb-1">{{recipe.name}}</h4>
+      <p class="list-group-item-text mb-1 text-truncate">{{recipe.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img
+          [src]="recipe.imagePath"
+          alt="{{recipe.name}}"
+          class="img-responsive img-rounded"
+          style="max-height: 50px;"
+        >
+    </span>
   </div>
-  <span class="pull-right">
-        <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 50px;">
-      </span>
+
 </a>

@@ -1,6 +1,8 @@
 import {Recipe} from "../models/recipe.model";
+import {EventEmitter} from "@angular/core";
 
 export class RecipeService {
+  recipeSelected = new EventEmitter<Recipe>();
 
   constructor() { }
 
